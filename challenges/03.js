@@ -1,8 +1,4 @@
-function chunkyMonkey(values, size) {
-	//  write code here.
-}
-
-
+const chunkyMonkey = (values, size) => [values.slice(0, size), values.slice(size)];
 
 /**
 * Test Suite 
