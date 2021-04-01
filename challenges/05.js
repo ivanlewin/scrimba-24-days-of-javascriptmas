@@ -1,8 +1,4 @@
-function reverseAString(str) {
-	//  write code here.
-}
-
-
+const reverseAString = str => str.split("").reverse().join("")
 
 /**
 * Test Suite 
