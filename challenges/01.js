@@ -1,8 +1,4 @@
-function candies(children, candy) {
-	//  write code here.
-}
-
-
+const candies = (children, candy) => candy - candy % children;
 
 /**
 * Test Suite 
