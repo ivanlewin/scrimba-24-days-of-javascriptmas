@@ -38,6 +38,20 @@
 	<div id="challenge-output">
 		<script type="text/javascript" src="/challenges/01.js"></script>
 	</div>
+	<script>
+		const challengeSelector = document.getElementById("challenge-selector");
+		const challengeOutput = document.getElementById("challenge-output");
+
+		challengeSelector.onchange = event => {
+			const newScript = document.createElement("script");
+			newScript.type = "text/javascript";
+			newScript.src = `/challenges/${event.target.value}.js`;
+			newScript.innerHTML = null;
+
+			document.getElementById("challenge-output").innerHTML = ""; // remove previous script
+			document.getElementById("challenge-output").appendChild(newScript); // add new script
+		}
+	</script>
 </body>
 
 </html>
