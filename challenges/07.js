@@ -1,9 +1,10 @@
-function countVowelConsonant(str) {
-	// write code here
-
+const countVowelConsonant = str => {
+	const vowels = ["a", "e", "i", "o", "u"];
+	return str.split("").reduce((accumulator, currentValue) => {
+		const value = vowels.includes(currentValue) ? 1 : 2;
+		return accumulator + value;
+	}, 0)
 }
-
-
 
 /**
 * Test Suite 
