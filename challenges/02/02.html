@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/jasmine/jasmine.css">
+	<script type="text/javascript" src="/jasmine/jasmine.js"></script>
+	<script type="text/javascript" src="/jasmine/jasmine-html.js"></script>
+	<script type="text/javascript" src="/jasmine/boot.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+	<title>Deposit Profit</title>
+</head>
+
+<body>
+	<div id="challenge-text">
+		<h1 id="deposit-profit">Deposit Profit</h1>
+		<p>You have deposited a specific amount of dollares into your bank account. Each year your balance increases at
+			the same growth rate. Find out how long it would take for your balance to pass a specific threshold with the
+			assumption that you don&#39;t make any additional deposits.</p>
+		<p><strong>Example</strong></p>
+		<ul>
+			<li>
+				<p>For deposit = 100, rate = 20, and threshold = 170, the output should be depositProfit(deposit, rate,
+					threshold) = 3.</p>
+				<p> Each year the amount of money on your account increases by 20%. It means that throughout the years
+					your balance would be:</p>
+				<ul>
+					<li><strong>year 0: 100</strong></li>
+					<li><strong>year 1: 120</strong></li>
+					<li>
+						<p><strong>year 2: 144</strong></p>
+						<ul>
+							<li><strong>year 3: 172,8</strong></li>
+						</ul>
+						<p>Thus, it will take 3 years for your balance to pass the threshold, which is the answer.</p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+	<script type="text/javascript" src="/challenges/02.js"></script>
+</body>
+
+</html>
